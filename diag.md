@@ -32,7 +32,7 @@ $f(n)$: go through strings in shortlex order, at $x$ check
 - stage $2i$: $M_i(x) \neq L(x)$,
 - stage $2i+1$: $\mathrm{SAT}(x) \neq L(r_i(x))$,
 
-advance if different. $L(x)$ needs $\mathrm{SAT}(x)$ (brute force) and $f(|x|)$ (recursive, fine since $|x| < n$). Stop after $n$ steps, output the stage. So $f$ is poly, nondecreasing, and passes a stage iff a witness exists.
+advance if different. $L(x)$ needs $\mathrm{SAT}(x)$ (brute force) and $f(|x|)$ (recursive, fine since $|x| < n$ and simulation step is bounded by n). Stop after $n$ steps, output the stage. So $f$ is poly, nondecreasing, and passes a stage iff a witness exists.
 
 $L \in \mathsf{NP}$ since $f$ is poly.
 
